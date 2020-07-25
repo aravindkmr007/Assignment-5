@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    width: 100vw;
+    height: 30vh;
+    background-color: black;
+    color: white;
+}
+header h1{
+    margin-left: 120px;
+    margin-top: 75px;
+    font-family: 'Audiowide', cursive;
+}
+header h1,header img{
+    float: left;
+}
+header img{
+    position: absolute;
+    margin-top: 45px;
+    margin-bottom: 55px;
+}
+#Topmenubar{
+    position: absolute;
+    margin-top: 150px;
+    height: 25px;
+    font-size: 20px;
+    margin-left: 320px;
+}
+#Topmenubar li {
+    float: left;
+    list-style: none;
+    
+}
+#Topmenubar li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#Topmenubar li a:hover {
+    background-color: white;
+    border-radius: 3px;
+    color: black;   
+}
+#Topmenubar li:hover {
+    background-color: white;
+    border-radius: 3px;  
+}
+#blink{
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+#img-1 img{
+    width: 100vw;
+    height: 70vh;
+}
+#img-1:hover img{
+    opacity: 0.5;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+#more {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 65vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+#img-1:hover #more{
+    opacity: 1;
+    background-color: green;
+    color: white;
+    padding: 20px 15px;
+    font-size: larger;
+    text-decoration: none;
+}
+#Tabs > input , #Tabs section > div{
+    display: none;
+}
+#Overview:checked ~ section .Overview,
+#Specification:checked ~ section .Specification,
+#Interior:checked ~ section .Interior,
+#Exterior:checked ~ section .Exterior{
+    display: block;  
+}
+#Overview:checked ~ #menubar ul .Overview,
+#Specification:checked ~ #menubar ul .Specification,
+#Interior:checked ~ #menubar ul .Interior,
+#Exterior:checked ~ #menubar ul .Exterior{
+    background-color: white;
+    color: black;  
+    
+}
+#menubar ul {
+    height: 60px;
+    width: 100%;
+    list-style-type: none;
+    
+}
+#menubar ul li {
+    float: left;
+    padding: 15px 25px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    background-color:black;
+    color: whitesmoke;
+}
+#menubar ul li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#menubar ul li:active{
+    background-color: white;
+    color: black;
+}
+#over,#Specs,#inter,#Exter{
+    width: 100vw;
+    background-color: lightgray;
+    padding-bottom: 40px;
+} 
+
+#over table td,#over table th ,#over table tr {
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+#over table {
+    float: right;
+    position: relative;
+    right: 20px;
+    background-color: white;
+    width: 730px;
+    height: 400px;
+    border-radius: 50px;
+}
+#Alert a{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+#Question a{
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid blue;
+    border-radius: 10px;
+
+}
+#Alert a:hover{
+    background-color: darkred;
+    border-radius: 10px;
+}
+#Question a:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+
+}
+#overcontent {
+    position: relative;
+    padding: 20px;
+    width: 70%;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+#overcontent p{
+    text-align: justify;
+}
+footer {
+    width: 100%; 
+    color: white;
+    height: max-content;
+    
+}
+footer div ul{ 
+    float: left;
+    background-color: rgb(0,0,0);
+    width: 33.33%;
+    text-align: center;
+    height: 350px;
+    padding-top: 20px;
+}
+footer div ul li{
+    list-style: none;
+    padding: 7px;
+    font-size: larger;
+    
+}
+#social-media a img{
+    width: 40px;
+    height: 40px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.keyspecs{
+    background-image: url(https://i.ytimg.com/vi/224bj5YbBio/maxresdefault.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+#Text1{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: 600px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: auto ;
+    margin-right: auto;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#Specs p{
+    line-height: 20px;
+    word-spacing: 2px;
+    text-indent: 30px;
+}
+#Text2{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: 600px;
+    height: 100px;
+    margin-top: 200px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+#Text2 table{
+    width: 600px;
+}
+
+
+
+
+
